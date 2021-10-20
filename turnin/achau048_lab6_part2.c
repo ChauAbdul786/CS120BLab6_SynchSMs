@@ -1,7 +1,7 @@
 /*	Author: Abdullah Chaudhry
  *  Partner(s) Name: 
  *	Lab Section: 21
- *	Assignment: Lab #5  Exercise #2
+ *	Assignment: Lab #6  Exercise #2
  *	Exercise Description: Three blinking lights on PB2 - PB0 blink in ascending order (PB0, PB1, PB2, PB0, PB1, ...), changing lights every 300 ms. 
                           Pressing a button connected to PA0 will pause the sequence on whatever light is currently lit. Pressing the button again
                           will reset the sequence.
