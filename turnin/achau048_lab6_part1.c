@@ -1,7 +1,7 @@
 /*	Author: Abdullah Chaudhry
  *  Partner(s) Name: 
  *	Lab Section: 21
- *	Assignment: Lab #5  Exercise #1
+ *	Assignment: Lab #6  Exercise #1
  *	Exercise Description: Three blinking lights on PB2 - PB0 blink in ascending order (PB0, PB1, PB2, PB0, PB1, ...), changing lights every second.
  *
  *	I acknowledge all content contained herein, excluding template or example
@@ -66,7 +66,7 @@ void Tick(){
 
 int main(void) {
     /* Insert DDR and PORT initializations */
-    DDRB = 0x0FF; PORTB = 0x00;
+    DDRB = 0xFF; PORTB = 0x00;
 
     /* Insert your solution below */
     TimerSet(1000);
