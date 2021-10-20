@@ -40,10 +40,10 @@ expectPORTB 2
 # Check pass/fail
 checkResult
 
-test "Start, Wait 2 Ticks => PORTB: 0x03"
+test "Start, Wait 2 Ticks => PORTB: 0x04"
 continue 2
 # Set expect values
-expectPORTB 3
+expectPORTB 4
 # Check pass/fail
 checkResult
 
@@ -61,10 +61,10 @@ expectPORTB 2
 # Check pass/fail
 checkResult
 
-test "Start, Wait 5 Ticks => PORTB: 0x03"
+test "Start, Wait 5 Ticks => PORTB: 0x04"
 continue 5
 # Set expect values
-expectPORTB 3
+expectPORTB 4
 # Check pass/fail
 checkResult
 
