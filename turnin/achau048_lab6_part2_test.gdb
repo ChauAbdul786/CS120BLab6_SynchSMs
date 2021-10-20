@@ -71,7 +71,7 @@ checkResult
 test "Start, Press Button Once => PORTB: 0x01"
 setPINA 0xFE
 continue 1
-setPINA 0x00
+setPINA 0xFF
 # Set expect values
 expectPORTB 1
 # Check pass/fail
@@ -80,11 +80,11 @@ checkResult
 test "Start, Press Button Twice => PORTB: 0x01"
 setPINA 0xFE
 continue 1
-setPINA 0x00
+setPINA 0xFF
 continue 1
 setPINA 0xFE
 continue 1
-setPINA 0x00
+setPINA 0xFF
 # Set expect values
 expectPORTB 1
 # Check pass/fail
@@ -94,7 +94,7 @@ test "Start, Wait 1 Tick, Press Button Once => PORTB: 0x02"
 continue 1
 setPINA 0xFE
 continue 1
-setPINA 0x00
+setPINA 0xFF
 continue 1
 # Set expect values
 expectPORTB 2
@@ -105,11 +105,11 @@ test "Start, Wait 1 Tick, Press Button Twice => PORTB: 0x01"
 continue 1
 setPINA 0xFE
 continue 1
-setPINA 0x00
+setPINA 0xFF
 continue 1
 setPINA 0xFE
 continue 1
-setPINA 0x00
+setPINA 0xFF
 continue 1
 # Set expect values
 expectPORTB 1
@@ -120,7 +120,7 @@ test "Start, Wait 2 Tick, Press Button Once => PORTB: 0x04"
 continue 2
 setPINA 0xFE
 continue 1
-setPINA 0x00
+setPINA 0xFF
 continue 1
 # Set expect values
 expectPORTB 4
@@ -131,11 +131,11 @@ test "Start, Wait 2 Tick, Press Button Twice => PORTB: 0x01"
 continue 2
 setPINA 0xFE
 continue 1
-setPINA 0x00
+setPINA 0xFF
 continue 1
 setPINA 0xFE
 continue 1
-setPINA 0x00
+setPINA 0xFF
 continue 1
 # Set expect values
 expectPORTB 1
@@ -146,7 +146,7 @@ test "Start, Wait 3 Tick, Press Button Once => PORTB: 0x04"
 continue 3
 setPINA 0xFE
 continue 1
-setPINA 0x00
+setPINA 0xFF
 continue 1
 # Set expect values
 expectPORTB 4
@@ -157,11 +157,11 @@ test "Start, Wait 3 Tick, Press Button Twice => PORTB: 0x01"
 continue 3
 setPINA 0xFE
 continue 1
-setPINA 0x00
+setPINA 0xFF
 continue 1
 setPINA 0xFE
 continue 1
-setPINA 0x00
+setPINA 0xFF
 continue 1
 # Set expect values
 expectPORTB 1
@@ -172,7 +172,7 @@ test "Start, Wait 4 Tick, Press Button Once => PORTB: 0x01"
 continue 4
 setPINA 0xFE
 continue 1
-setPINA 0x00
+setPINA 0xFF
 continue 1
 # Set expect values
 expectPORTB 1
@@ -183,11 +183,11 @@ test "Start, Wait 4 Tick, Press Button Twice => PORTB: 0x01"
 continue 4
 setPINA 0xFE
 continue 1
-setPINA 0x00
+setPINA 0xFF
 continue 1
 setPINA 0xFE
 continue 1
-setPINA 0x00
+setPINA 0xFF
 continue 1
 # Set expect values
 expectPORTB 1
